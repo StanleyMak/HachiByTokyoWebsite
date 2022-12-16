@@ -1,91 +1,89 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #F0B150;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nav_item {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.nav_item:hover {
+  color: grey;
+}
+
+.box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .image_wrapper {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.box .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  font-size: 35px;
+  width: 300px;
+  height: 260px;
+  padding: 40px;
+  background-color: #FFF6E8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-right: -50px;
 }
 
-.title a {
-  color: #0070f3;
+.box .content .button {
+  font-size: 20px;
+  color: white;
   text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
+  background-color: #F0B150;
+  width: 150px;
+  padding: 15px;
+  border-radius: 30px;
   text-align: center;
 }
 
-.title,
-.description {
-  text-align: center;
+.box .content .button:hover {
+  background-color: #eec383;
 }
 
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media screen and (max-width: 832px){
+  .box {
+    flex-direction: column-reverse;
   }
+
+  .box .content {
+    margin-right: 0;
+    margin-top: -30px;
+  }
+
 }
