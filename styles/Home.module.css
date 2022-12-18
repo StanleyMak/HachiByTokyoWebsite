@@ -4,28 +4,18 @@
   flex-direction: column;
 }
 
-.header {
+header .nav_bar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  padding-top: 50px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #F0B150;
+  gap: 2.5rem;
 }
 
-.nav_bar {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.nav_item {
+header .nav_item {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
-.nav_item:hover {
+header .nav_item:hover {
   color: grey;
 }
 
@@ -49,7 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 35px;
+  font-size: 2rem;
   width: 300px;
   height: 260px;
   padding: 40px;
@@ -60,8 +50,8 @@
   margin-right: -50px;
 }
 
-.box .content .button {
-  font-size: 20px;
+.box .content a {
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   background-color: #F0B150;
@@ -71,10 +61,68 @@
   text-align: center;
 }
 
-.box .content .button:hover {
+.box .content a:hover {
   background-color: #eec383;
 }
 
+footer .top {
+  display: flex;
+  height: 60%;
+  width: 60%;
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+
+footer .top .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .top a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: #F0B150;
+  height: 50px;
+  width: 150px;
+  padding: 15px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+footer .top a:hover {
+  background-color: #eec383;
+}
+
+footer .btm {
+  display: flex;
+  height: 20%;
+  width: 60%;
+  justify-content: space-between;
+}
+
+footer .btm .policy{
+  padding-top: 1.25rem;
+  font-size: 0.75rem;
+}
+
+footer .btm .socials{
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 70vw;
+  border-top: 2px solid #F0B150;
+  font-size: .75rem;
+}
 
 @media screen and (max-width: 832px){
   .box {
