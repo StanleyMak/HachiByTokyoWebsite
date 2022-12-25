@@ -1,20 +1,4 @@
 .container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-header .nav_bar {
-  display: flex;
-  gap: 2.5rem;
-}
-
-header .nav_item {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-}
-
-header .nav_item:hover {
-  color: grey;
 }

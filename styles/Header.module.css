@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0b150;
+}
+
+.nav_bar {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav_item {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav_item:hover {
+  color: grey;
+}
