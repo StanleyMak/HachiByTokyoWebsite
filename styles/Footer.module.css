@@ -1,4 +1,4 @@
-.footer {
+.container {
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -21,19 +21,28 @@
   justify-content: space-between;
 }
 
-.top a {
+.top .contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.top .contact a:hover {
+  color: grey
+}
+
+.top .button {
   font-size: 1rem;
   text-decoration: none;
   color: white;
   background-color: #f0b150;
   height: 50px;
   width: 150px;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 30px;
   text-align: center;
 }
 
-.top a:hover {
+.top .button:hover {
   background-color: #eec383;
 }
 
@@ -67,11 +76,10 @@
   height: 20%;
   width: 70vw;
   border-top: 2px solid #f0b150;
-  font-size: 0.75rem;
 }
 
-@media screen and (max-width: 1080px) {
-  .footer {
+@media screen and (max-width: 1250px) {
+  .container {
     height: 700px;
   }
 
@@ -79,7 +87,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 80%;
-    padding-top: 0rem;
+    padding-top: 0;
   }
 
   .top .contact {

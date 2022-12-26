@@ -4,16 +4,18 @@
 }
 
 .box {
-  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  padding-top: 5rem;
 }
 
 .box .image_wrapper {
-  width: 500px;
-  height: 500px;
-  border-radius: 20px;
+  width: 60vh;
+  height: 60vh;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
   z-index: -1;
@@ -23,15 +25,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2rem;
-  width: 300px;
-  height: 260px;
-  padding: 40px;
+  width: 15vw;
+  min-width: 280px;
+  padding: 4rem;
   background-color: #fff6e8;
   border-radius: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin-right: -50px;
+  margin-top: 25rem;
+  margin-right: -7rem;
 }
 
 .box .content a {
@@ -39,8 +39,8 @@
   color: white;
   text-decoration: none;
   background-color: #f0b150;
-  width: 150px;
-  padding: 15px;
+  width: 9rem;
+  padding: 1rem;
   border-radius: 30px;
   text-align: center;
 }
@@ -49,13 +49,109 @@
   background-color: #eec383;
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 1150px) {
   .box {
     flex-direction: column-reverse;
   }
 
   .box .content {
     margin-right: 0;
-    margin-top: -30px;
+    margin-top: -2rem;
+    width: 60vw;
+    align-items: center;
+    padding: 2rem 2rem;
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.services .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 25rem;
+  background-color: #fff6e8;
+  gap: 1.5rem;
+}
+
+.services .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 4rem;
+  width: 70%;
+}
+
+.services .btm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 4rem;
+  width: 45%;
+  border-top: 2px solid #f0b150;
+  margin-top: 5rem;
+}
+
+.services .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 3rem;
+  border-radius: 20px;
+  min-height: 500px;
+  min-width: 377px;
+  gap: 3rem;
+}
+
+.services .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services .details a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: #f0b150;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.services .details a:hover {
+  background-color: #eec383;
+}
+
+@media screen and (max-width: 1350px) {
+  .services .header {
+    padding: 2.5rem 5rem;
+  }
+
+  .services .top {
+    flex-direction: column;
+    width: 80%;
+    align-items: stretch;
+  }
+
+  .services .btm {
+    flex-direction: column;
+    width: 80%;
+    align-items: stretch;
+  }
+}
+
+.reviews {
+  padding: 20rem 0;
 }
