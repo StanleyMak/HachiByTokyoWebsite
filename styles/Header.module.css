@@ -1,23 +1,150 @@
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-end;
   padding-top: 3rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #f0b150;
 }
 
-.nav_bar {
+.logoWrapper {
+  height: 200px;
+  width: 400px;
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.navBar {
   display: flex;
   gap: 3rem;
 }
 
-.nav_item {
-  text-decoration: none;
+.navItem {
   color: black;
   font-size: 1.5rem;
 }
 
-.nav_item:hover {
-  color: grey;
+.navItem:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* mobile menu */
+
+.menuIcon {
+  display: none;
+  align-self: center;
+  cursor: pointer;
+}
+
+.menuIcon .bar1 {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menuIcon .bar2 {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menuIcon .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -85vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 186px;
+  left: 0;
+  height: calc(100vh - 186px);
+  width: 85%;
+  background-color: #fff6e8;
+  font-size: 1.25rem;
+  padding: 3rem;
+}
+
+.mobileMenu .links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileMenu .links div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobileMenu a {
+  color: black;
+}
+
+.mobileMenu a:active {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.mobileMenu .socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .header {
+    flex-direction: row-reverse;
+  }
+
+  .logoWrapper {
+    height: 120px;
+    width: 240px;
+    margin-bottom: 0;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
 }

@@ -28,7 +28,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className={styles.image_wrapper}>
+          <div className={styles.imageWrapper}>
             <Image src="/home/dog1.png" alt="Cute dog" fill />
           </div>
         </section>

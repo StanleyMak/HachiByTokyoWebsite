@@ -11,9 +11,9 @@
   padding-top: 5rem;
 }
 
-.box .image_wrapper {
-  width: 60vh;
+.box .imageWrapper {
   height: 60vh;
+  width: 60vh;
   flex-shrink: 0;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 15vw;
+  width: 14vw;
   min-width: 280px;
   padding: 4rem;
   background-color: #fff6e8;
@@ -37,7 +37,6 @@
 .box .content a {
   font-size: 1rem;
   color: white;
-  text-decoration: none;
   background-color: #f0b150;
   width: 9rem;
   padding: 1rem;
@@ -46,7 +45,8 @@
 }
 
 .box .content a:hover {
-  background-color: #eec383;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1150px) {
@@ -60,6 +60,11 @@
     width: 60vw;
     align-items: center;
     padding: 2rem 2rem;
+  }
+
+  .box .imageWrapper {
+    height: 90vw;
+    width: 90vw;
   }
 }
 
@@ -109,8 +114,7 @@
   background-color: #f0f0f0;
   padding: 3rem;
   border-radius: 20px;
-  min-height: 500px;
-  min-width: 377px;
+  min-height: 550px;
   gap: 3rem;
 }
 
@@ -123,7 +127,6 @@
 .services .details a {
   font-size: 1rem;
   color: white;
-  text-decoration: none;
   background-color: #f0b150;
   padding: 1.5rem 3rem;
   border-radius: 50px;
@@ -131,7 +134,8 @@
 }
 
 .services .details a:hover {
-  background-color: #eec383;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1350px) {
