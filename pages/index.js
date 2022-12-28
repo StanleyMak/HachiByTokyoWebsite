@@ -20,7 +20,6 @@ export default function Home() {
         <meta name="description" content="Dog grooming salon" />
       </Head>
 
-      <main>
         <section className={styles.landing} >
           <div className={styles.content}>
             <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
@@ -40,9 +39,9 @@ export default function Home() {
         </section>
 
         <section className={styles.services}>
-          <div className={styles.header} data-aos="fade-up">
+          <div className={styles.header} data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h1 style={{ fontSize: "3rem" }}>Our Services</h1>
-            <h2 style={{ fontSize: "1.4rem" }}>Dogs | Cats | Rabbits</h2>
+            <h2 style={{ fontSize: "1.3rem" }}>Dogs | Cats | Rabbits</h2>
             <p style={{ lineHeight: "1.5" }}>
               HACHI by tokyo strives to provide your pets with the utmost love &
               care. <br />
@@ -160,18 +159,7 @@ export default function Home() {
         <section className={styles.reviews} data-aos="fade-up">
           <h1>- google reviews! -</h1>
         </section>
-      </main>
-
-      <style jsx>{`
-        main {
-          margin: 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-      `}</style>
+    
     </div>
   );
 }

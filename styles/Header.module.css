@@ -1,15 +1,24 @@
 .header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
   border-bottom: 2px solid #f0b150;
+  z-index: 99;
+  top: -164px;
+  transition: top 0.2s ease-out;
+}
+
+.header.fixedToTop {
+  top: 0px;
 }
 
 .logoWrapper {
-  height: 200px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
   position: relative;
   margin-bottom: -20px;
 }
@@ -94,9 +103,9 @@
 .mobileMenu {
   display: none;
   position: absolute;
-  top: 134px;
   left: 0;
-  height: calc(100vh - 134px);
+  top: 108px;
+  height: calc(100vh - 109px);
   width: 85%;
   background-color: #fff6e8;
   font-size: 1.25rem;
@@ -137,7 +146,7 @@
 @media screen and (max-width: 1150px) {
   .header {
     align-items: center;
-    padding-top: 1rem;
+    padding: 0.2rem;
   }
 
   .logoWrapper {

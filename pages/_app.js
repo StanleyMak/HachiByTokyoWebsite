@@ -1,12 +1,13 @@
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
+import Script from "next/script.js";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from "@next/font/google";
 import "../styles/globals.css";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400'],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export default function App({ Component, pageProps }) {

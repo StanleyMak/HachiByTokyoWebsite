@@ -1,6 +1,9 @@
 .container {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .services {
@@ -8,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: calc(5rem + 164px);
 }
 
 .services .header {
@@ -22,6 +26,10 @@
 }
 
 @media screen and (max-width: 1350px) {
+  .services {
+    padding-top: 108px;
+  }
+
   .services .header {
     padding: 2.5rem 5rem;
   }
