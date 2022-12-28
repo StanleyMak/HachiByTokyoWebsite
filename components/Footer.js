@@ -14,7 +14,7 @@ export default function Footer() {
         />
         <div className={styles.contact}>
           <h1 style={{ fontSize: "2rem" }}>Contact Us</h1>
-          <div style={{ fontSize: "1.25rem", lineHeight: "2.5" }}>
+          <div>
             <p>
               <a href="https://www.google.com/maps/place/Hachi+by+tokyo+-+Pet+Grooming+%26+More/@1.3106612,103.7887129,15z/data=!4m5!3m4!1s0x0:0xd6f896985e5a182d!8m2!3d1.3106612!4d103.7887129">
                 21 Ghim Moh Road, #01-201, S 270021

@@ -1,10 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Script from "next/script";
 import styles from "../styles/Home.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,11 +21,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className={styles.box}>
+        <section className={styles.landing} >
           <div className={styles.content}>
-            <p style={{ fontSize: "2rem", marginBottom: "1rem" }}>
+            <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
               Pet Grooming and Pet Care
-            </p>
+            </h2>
             <Link
               href="https://booking.moego.pet/go/?name=HachibyTokyo&book=0"
               legacyBehavior
@@ -34,21 +40,29 @@ export default function Home() {
         </section>
 
         <section className={styles.services}>
-          <div className={styles.header}>
+          <div className={styles.header} data-aos="fade-up">
             <h1 style={{ fontSize: "3rem" }}>Our Services</h1>
-            <h2 style={{ fontSize: "1.5rem" }}>Dogs | Cats | Rabbits</h2>
-            <p style={{ fontSize: "1rem", lineHeight: "1.5" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+            <h2 style={{ fontSize: "1.4rem" }}>Dogs | Cats | Rabbits</h2>
+            <p style={{ lineHeight: "1.5" }}>
+              HACHI by tokyo strives to provide your pets with the utmost love &
+              care. <br />
+              We believe that our beloved pets deserve a safe & happy grooming
+              experience.
+              <br />
+              Providing both you and your pet a trustworthy, welcoming and
+              premier pet service.
+              <br />
+              Dedicated, detailed and careful.
+            </p>
+            <p style={{ lineHeight: "1.5" }}>
+              Ensuring satisfaction for both you and your pet, book an
+              appointment with HACHI by tokyo today!
+              <br />
+              Singapore | Tokyo
             </p>
           </div>
 
-          <div className={styles.top}>
+          <div className={styles.top} data-aos="fade-up">
             <div className={styles.card}>
               <Image
                 src="/home/dog1.png"
@@ -99,13 +113,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.details}>
-            <Link href="/services" legacyBehavior>
-              <a>View Detailed Rates</a>
-            </Link>
-          </div>
+          <Link href="/services" legacyBehavior>
+            <a>View Detailed Rates</a>
+          </Link>
 
-          <div className={styles.btm}>
+          <div className={styles.btm} data-aos="fade-up">
             <div className={styles.card}>
               <Image
                 src="/home/dog1.png"
@@ -140,14 +152,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.details}>
-            <Link href="/services" legacyBehavior>
-              <a>View Detailed Rates</a>
-            </Link>
-          </div>
+          <Link href="/services" legacyBehavior>
+            <a>View Detailed Rates</a>
+          </Link>
         </section>
 
-        <section className={styles.reviews}>
+        <section className={styles.reviews} data-aos="fade-up">
           <h1>- google reviews! -</h1>
         </section>
       </main>

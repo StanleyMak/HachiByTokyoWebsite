@@ -17,15 +17,23 @@ export default function Services() {
         <section className={styles.services}>
           <div className={styles.header}>
             <h1 style={{ fontSize: "3rem" }}>Our Services</h1>
-            <h2 style={{ fontSize: "1.5rem" }}>Dogs | Cats | Rabbits</h2>
-            <p style={{ fontSize: "1rem", lineHeight: "1.5" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+            <h2 style={{ fontSize: "1.4rem" }}>Dogs | Cats | Rabbits</h2>
+            <p style={{ lineHeight: "1.5" }}>
+              HACHI by tokyo strives to provide your pets with the utmost love &
+              care. <br />
+              We believe that our beloved pets deserve a safe & happy grooming
+              experience.
+              <br />
+              Providing both you and your pet a trustworthy, welcoming and
+              premier pet service.
+              <br />
+              Dedicated, detailed and careful.
+            </p>
+            <p style={{ lineHeight: "1.5" }}>
+              Ensuring satisfaction for both you and your pet, book an
+              appointment with HACHI by tokyo today!
+              <br />
+              Singapore | Tokyo
             </p>
           </div>
         </section>

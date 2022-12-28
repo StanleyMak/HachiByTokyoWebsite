@@ -21,6 +21,11 @@
   justify-content: space-between;
 }
 
+.top .contact div {
+  font-size: 1.25rem;
+  line-height: 2.5;
+}
+
 .top .contact a {
   text-decoration: none;
   color: black;
@@ -31,8 +36,7 @@
 }
 
 .top .button {
-  font-size: 1rem;
-  text-decoration: none;
+  font-weight: 600;
   color: white;
   background-color: #f0b150;
   height: 50px;
@@ -43,7 +47,8 @@
 }
 
 .top .button:hover {
-  background-color: #eec383;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .btm {
@@ -92,6 +97,11 @@
 
   .top .contact {
     gap: 2rem;
+  }
+
+  .top .contact div {
+    font-size: 0.8rem;
+    line-height: 3;
   }
 
   .btm {
