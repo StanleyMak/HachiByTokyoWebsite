@@ -51,7 +51,7 @@ export default function Services() {
   };
 
   const openDogPriceList = () => {
-    document.getElementById("dogPriceList").magnificPopup({type:'image'});
+    document.getElementById("dogPriceList").magnificPopup({ type: "image" });
   };
 
   // // Close the dropdown menu if the user clicks outside of it
@@ -67,6 +67,10 @@ export default function Services() {
   //     }
   //   }
   // };
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <div className={styles.container}>

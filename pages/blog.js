@@ -4,6 +4,10 @@ import Image from "next/image";
 import styles from "../styles/Blog.module.css";
 
 export default function Services() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
