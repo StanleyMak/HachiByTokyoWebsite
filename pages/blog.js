@@ -13,20 +13,9 @@ export default function Services() {
         <meta name="description" content="Dog grooming salon" />
       </Head>
 
-      <main>
-        <h1>Blog!</h1>
-      </main>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-      `}</style>
+      <div className={styles.landing}>
+        <h1>Work in Progress...</h1>
+      </div>
     </div>
   );
 }
