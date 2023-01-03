@@ -84,81 +84,81 @@ export default function Services() {
         <meta name="description" content="Dog grooming salon" />
       </Head>
 
-      <section className={styles.landing}>
-        <div className={styles.header} data-aos="fade-up">
-          <h1 style={{ fontSize: "3rem" }}>Our Services</h1>
-          <h2 style={{ fontSize: "1.3rem" }}>Dogs | Cats | Rabbits</h2>
-          <p style={{ lineHeight: "1.5" }}>
-            HACHI by tokyo strives to provide your pets with the utmost love &
-            care. <br />
-            We believe that our beloved pets deserve a safe & happy grooming
-            experience.
-            <br />
-            Providing both you and your pet a trustworthy, welcoming and premier
-            pet service.
-            <br />
-            Dedicated, detailed and careful.
-          </p>
-          <p style={{ lineHeight: "1.5" }}>
-            Ensuring satisfaction for both you and your pet, book an appointment
-            with HACHI by tokyo today!
-            <br />
-            Singapore | Tokyo
-          </p>
-        </div>
+      <div className={styles.buffer}></div>
 
-        <div className={styles.cards} data-aos="fade-up">
-          <div className={styles.card}>
-            <Image
-              src="/home/dog1.png"
-              alt="Cute dog"
-              height={100}
-              width={100}
-            />
-            <div className={styles.text}>
-              <h1>Full Grooming</h1>
-              <p>1. Bath & Blow Dry</p>
-              <p>2. Nail Trimming</p>
-              <p>3. Paw Pad Shaving</p>
-              <p>4. Shaving of Sanitary and Belly area</p>
-              <p>5. Ear Cleaning</p>
-              <p>6. Style & Trim</p>
-              <p>7. Anal Gland Expression (optional)</p>
-            </div>
-          </div>
+      <div className={styles.header} data-aos="fade-up">
+        <h1 style={{ fontSize: "3rem" }}>Our Services</h1>
+        <h2 style={{ fontSize: "1.3rem" }}>Dogs | Cats | Rabbits</h2>
+        <p style={{ lineHeight: "1.5" }}>
+          HACHI by tokyo strives to provide your pets with the utmost love &
+          care. <br />
+          We believe that our beloved pets deserve a safe & happy grooming
+          experience.
+          <br />
+          Providing both you and your pet a trustworthy, welcoming and premier
+          pet service.
+          <br />
+          Dedicated, detailed and careful.
+        </p>
+        <p style={{ lineHeight: "1.5" }}>
+          Ensuring satisfaction for both you and your pet, book an appointment
+          with HACHI by tokyo today!
+          <br />
+          Singapore | Tokyo
+        </p>
+      </div>
 
-          <div className={styles.card}>
-            <Image
-              src="/home/dog1.png"
-              alt="Cute dog"
-              height={100}
-              width={100}
-            />
-            <div className={styles.text}>
-              <h1>Basic Grooming</h1>
-              <p>1. Bath & Blow Dry</p>
-              <p>2. Nail Trimming</p>
-              <p>3. Paw Pad Shaving</p>
-              <p>4. Shaving of Sanitary and Belly area</p>
-              <p>5. Ear Cleaning</p>
-            </div>
-          </div>
-
-          <div className={styles.card}>
-            <Image
-              src="/home/dog1.png"
-              alt="Cute dog"
-              height={100}
-              width={100}
-            />
-            <div className={styles.text}>
-              <h1>Bath and Fluff</h1>
-              <p>A lovely Bath and Fluff for your Fur-kid 🐶🐱🐰 !</p>
-              <p>*only for dogs</p>
-            </div>
+      <div className={styles.top} data-aos="fade-up">
+        <div className={styles.card}>
+          <Image
+            src="/home/full_grooming.png"
+            alt="Cute dog"
+            height={100}
+            width={100}
+          />
+          <div className={styles.text}>
+            <h1>Full Grooming</h1>
+            <p>1. Bath & Blow Dry</p>
+            <p>2. Nail Trimming</p>
+            <p>3. Paw Pad Shaving</p>
+            <p>4. Shaving of Sanitary and Belly area</p>
+            <p>5. Ear Cleaning</p>
+            <p>6. Style & Trim</p>
+            <p>7. Anal Gland Expression (optional)</p>
           </div>
         </div>
-      </section>
+
+        <div className={styles.card}>
+          <Image
+            src="/home/basic_grooming.png"
+            alt="Cute dog"
+            height={100}
+            width={100}
+          />
+          <div className={styles.text}>
+            <h1>Basic Grooming</h1>
+            <p>1. Bath & Blow Dry</p>
+            <p>2. Nail Trimming</p>
+            <p>3. Paw Pad Shaving</p>
+            <p>4. Shaving of Sanitary and Belly area</p>
+            <p>5. Ear Cleaning</p>
+          </div>
+        </div>
+
+        <div className={styles.card}>
+          <Image
+            src="/home/bath_and_fluff.png"
+            alt="Cute dog"
+            height={100}
+            width={100}
+          />
+          <div className={styles.text}>
+            <h1>Bath and Fluff</h1>
+            <p>A lovely Bath and Fluff for your Fur-kid 🐶🐱🐰 !</p>
+            <p>*only for dogs</p>
+          </div>
+        </div>
+      </div>
 
       <section className={styles.pets}>
         <div className={styles.pet} data-aos="fade-up">
@@ -240,13 +240,13 @@ export default function Services() {
           </div>
         </div>
 
-        <a
+        {/* <a
           id="dogPriceList"
           onClick={openDogPriceList}
           href="https://moegonew.s3-us-west-2.amazonaws.com/Public/Uploads/1665583146778e9343dfa44ebdbdda51aebf22576c.png"
         >
           View Price List
-        </a>
+        </a> */}
 
         <div className={styles.pet} data-aos="fade-up">
           <h1 style={{ alignSelf: "center" }}>Cats</h1>
@@ -369,40 +369,40 @@ export default function Services() {
         </div>
       </section>
 
-      {/* <div className={styles.btm} data-aos="fade-up">
-          <div className={styles.card}>
-            <Image
-              src="/home/dog1.png"
-              alt="Cute dog"
-              height={100}
-              width={100}
-            />
-            <div className={styles.text}>
-              <h1>Add-ons</h1>
-              <p>Herbal Spa</p>
-              <p>Tooth Brushing</p>
-              <p>Dental Scaling</p>
-              <p>Nail Clipping</p>
-              <p>Ear Cleaning</p>
-              <p>Paw Pad Shaving</p>
-              <p>Anal Gland Expression</p>
-            </div>
+      <div className={styles.btm} data-aos="fade-up">
+        <div className={styles.card}>
+          <Image
+            src="/home/ala_carte.png"
+            alt="Cute dog"
+            height={100}
+            width={100}
+          />
+          <div className={styles.text}>
+            <h1>Add-ons</h1>
+            <p>Herbal Spa</p>
+            <p>Tooth Brushing</p>
+            <p>Dental Scaling</p>
+            <p>Nail Clipping</p>
+            <p>Ear Cleaning</p>
+            <p>Paw Pad Shaving</p>
+            <p>Anal Gland Expression</p>
           </div>
+        </div>
 
-          <div className={styles.card}>
-            <Image
-              src="/home/dog1.png"
-              alt="Cute dog"
-              height={100}
-              width={100}
-            />
-            <div className={styles.text}>
-              <h1>Boarding</h1>
-              <p>Whole day boarding</p>
-              <p>Half day boarding (4 hours)</p>
-            </div>
+        <div className={styles.card}>
+          <Image
+            src="/home/boarding.png"
+            alt="Cute dog"
+            height={100}
+            width={100}
+          />
+          <div className={styles.text}>
+            <h1>Boarding</h1>
+            <p>Whole day boarding</p>
+            <p>Half day boarding (4 hours)</p>
           </div>
-        </div> */}
+        </div>
+      </div>
     </div>
   );
 }

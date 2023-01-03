@@ -76,7 +76,7 @@ export default function Home() {
         <div className={styles.top} data-aos="fade-up">
           <div className={styles.card}>
             <Image
-              src="/home/dog1.png"
+              src="/home/full_grooming.png"
               alt="Cute dog"
               height={100}
               width={100}
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <Image
-              src="/home/dog1.png"
+              src="/home/basic_grooming.png"
               alt="Cute dog"
               height={100}
               width={100}
@@ -112,14 +112,14 @@ export default function Home() {
 
           <div className={styles.card}>
             <Image
-              src="/home/dog1.png"
+              src="/home/bath_and_fluff.png"
               alt="Cute dog"
               height={100}
               width={100}
             />
             <div className={styles.text}>
               <h1>Bath and Fluff</h1>
-              <p>A lovely Bath and Fluff for your Fur-kid 🐶🐱🐰 !</p>
+              <p>A lovely Bath and Fluff for your Fur-kid!</p>
               <p>*only for dogs</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Home() {
         <div className={styles.btm} data-aos="fade-up">
           <div className={styles.card}>
             <Image
-              src="/home/dog1.png"
+              src="/home/ala_carte.png"
               alt="Cute dog"
               height={100}
               width={100}
@@ -151,7 +151,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <Image
-              src="/home/dog1.png"
+              src="/home/boarding.png"
               alt="Cute dog"
               height={100}
               width={100}
